@@ -1,0 +1,81 @@
+*{
+    margin:0%;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+.main{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    margin-left:24%;
+    margin-top:7%;
+}
+#formy{
+    display:flex;
+    flex-direction:column;
+    width:600px;
+    border:none;
+    padding:2%;
+    border:2px solid black;
+
+}
+
+#formy label{
+    font-size:20px;
+    color:#4d4de6;
+    margin-top:2%;
+    margin-bottom:1%;
+}
+#formy input[type="text"],[type="email"],[type="password"]{
+    padding:1%;
+    width:100%;
+}
+.check{
+    display:flex;
+    margin:2%;
+}
+.check p{
+    margin-left:3%;
+}
+.btn{
+    background-color: #106be2;
+    color:white;
+    border-radius: 30px;
+    border:none;
+    padding:1%;
+    width:100%;
+    font-size:18px;
+}
+.btn:hover{
+    background-color: white;
+    color:#106be2;
+    border:1px solid #106be2;
+}
+.last{
+    margin-left:17%;
+    text-decoration: none;
+    color:#106be2;
+    font-size:20px;
+
+}
+.fa-solid{
+    animation-name:move;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes move{
+    0%{
+color: green;
+/*transform:scale(2.2);*/
+transform:rotate(90deg);
+    }
+    50%{
+color:red;
+/*transform:translateY(-300px);*/
+transform:rotate(180deg);
+    }
+    100%{
+color:gold;
+transform:rotate(360deg);
+    }
+}
